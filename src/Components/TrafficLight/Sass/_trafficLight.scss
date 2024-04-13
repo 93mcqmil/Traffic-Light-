@@ -1,10 +1,61 @@
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 12rem;
+  background-color: #62cff4;
+}
+
 .Traffic-Lights {
   width: 100px;
   height: 300px;
-  border: 2px solid black;
+  border: 5px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+  background-color: whitesmoke;
+
+  .light-red,
+  .light-yellow,
+  .light-green {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+}
+
+.light-red {
+  animation: redChange 2s linear infinite;
+}
+
+.light-yellow {
+  animation: yellowChange 2s linear infinite;
+}
+
+.light-green {
+  animation: greenChange 2s linear infinite;
+}
+
+@keyframes redChange {
+  0%,
+  25% {
+    background-color: red;
+  }
+}
+@keyframes yellowChange {
+  50%,
+  70% {
+    background-color: yellow;
+  }
+}
+@keyframes greenChange {
+  80%,
+  100% {
+    background-color: green;
+  }
 }

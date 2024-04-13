@@ -4,9 +4,9 @@ const TrafficLight = () => {
   return (
     <>
       <div className='Traffic-Lights'>
-        <div>Red </div>
-        <div>Yellow </div>
-        <div>Green</div>
+        <div className='light-red'> </div>
+        <div className='light-yellow'></div>
+        <div className='light-green'></div>
       </div>
     </>
   );
