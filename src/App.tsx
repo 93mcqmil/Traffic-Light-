@@ -1,5 +1,11 @@
+import TrafficLight from "./Components/TrafficLight/TrafficLight";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <TrafficLight />
+    </>
+  );
 }
 
 export default App;
